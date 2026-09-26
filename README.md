@@ -2,6 +2,10 @@
 
 A premium, responsive digital clock built with React and Tailwind CSS. The interface uses a cherry blossom background, live local time, a 12/24-hour toggle, and a warm editorial visual style.
 
+## Live Demo
+
+[Open Cherry Hour Digital Clock](https://digital-clock-app-woad.vercel.app/)
+
 ## Features
 
 - Live clock that updates every second
