@@ -1,6 +1,11 @@
 # Cherry Hour Digital Clock
 
-A premium, responsive digital clock built with React and Tailwind CSS. The interface uses a cherry blossom background, live local time, a 12/24-hour toggle, and a warm editorial visual style.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?logo=vercel&logoColor=white)](https://digital-clock-app-woad.vercel.app/)
+[![React](https://img.shields.io/badge/React-19-61DAFB?logo=react&logoColor=white)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-8-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+
+A premium, responsive digital clock built with React and Tailwind CSS. It displays the live local time over a cherry blossom background with a 12/24-hour format switch, date, and weekday details.
 
 ## Live Demo
 
@@ -9,21 +14,31 @@ A premium, responsive digital clock built with React and Tailwind CSS. The inter
 ## Features
 
 - Live clock that updates every second
-- 12-hour and 24-hour display toggle
+- 12-hour and 24-hour format toggle
 - Current date and day of the week
-- Responsive desktop and mobile layout
-- Cherry blossom background image from `src/assets/pngwing.com.png`
+- Responsive desktop, tablet, and mobile layout
+- Cherry blossom background from `src/assets/pngwing.com.png`
 - Tailwind CSS utility-based styling
 - ESLint configuration for code quality
 
 ## Tech Stack
 
-- React 19
-- Vite
-- Tailwind CSS 4
-- JavaScript
+| Technology | Purpose |
+| --- | --- |
+| React 19 | User interface and state management |
+| Vite 8 | Development server and production build |
+| Tailwind CSS 4 | Responsive styling |
+| JavaScript | Clock and date logic |
+| ESLint | Code quality checks |
 
 ## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/danish-devx/Digital-Clock-App.git
+cd Digital-Clock-App
+```
 
 ### Install dependencies
 
@@ -58,21 +73,29 @@ src/
 ├── assets/
 │   └── pngwing.com.png
 └── components/
-	└── DigitalClock/
-		└── DigitalClock.jsx
+    └── DigitalClock/
+        └── DigitalClock.jsx
 ```
 
 ## How It Works
 
-The `DigitalClock` component stores the current time in React state. A one-second interval updates the state, and JavaScript `Date` methods format the hours, minutes, seconds, date, and weekday for display.
+The `DigitalClock` component stores the current time in React state. A one-second interval updates that state, while JavaScript `Date` methods provide the hours, minutes, seconds, date, and weekday. The format button switches between 12-hour and 24-hour display modes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Deployment
 
-## React Compiler
+The application is deployed with Vercel:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+[View the deployed website](https://digital-clock-app-woad.vercel.app/)
 
-## Expanding the ESLint configuration
+## Future Ideas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Multiple timezone support
+- Alarm functionality
+- Custom clock themes
+- Multiple background options
+- Dark and light mode
+- Saved user preferences
+
+## Author
+
+M Danish, Frontend Web Developer and React Developer.
